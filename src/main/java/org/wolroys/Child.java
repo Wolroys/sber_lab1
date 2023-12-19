@@ -15,12 +15,12 @@ public class Child extends Parent{
     }
 
     Child(){
+        super();
         System.out.println("Child constructor");
     }
 
     public Child(String name) {
-        super(name); //Обращаюсь к родительскому конструктору с параметром для его вызова, иначе
-                    // произойдёт вызов родительского конструктора без параметров
+        super(name);
         System.out.println("Child:name-constructor 2");
     }
 
